@@ -11,6 +11,82 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, ROSCuisine.MODID);
 
+    public static final RegistryObject<Item> CARROT = ITEMS.register("carrot",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POTATO = ITEMS.register("potato",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ONION = ITEMS.register("onion",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GARLIC = ITEMS.register("garlic",
+                () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> CHICKEN = ITEMS.register("chicken",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PORK = ITEMS.register("pork",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BEEF = ITEMS.register("beef",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FISH = ITEMS.register("fish",
+                () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> MILK = ITEMS.register("milk",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BUTTER = ITEMS.register("butter",
+                () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> WHEAT = ITEMS.register("wheat",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BREAD = ITEMS.register("bread",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PASTA = ITEMS.register("pasta",
+                () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> APPLE = ITEMS.register("apple",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BANANA = ITEMS.register("banana",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ORANGE = ITEMS.register("orange",
+                () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> SOY_SAUCE = ITEMS.register("soy_sauce",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MAYONNAISE = ITEMS.register("mayonnaise",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> KETCHUP = ITEMS.register("ketchup",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MUSTARD = ITEMS.register("mustard",
+                () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> WATER = ITEMS.register("water",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> JUICE = ITEMS.register("juice",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TEA = ITEMS.register("tea",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> COFFEE = ITEMS.register("coffee",
+                () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PIZZA = ITEMS.register("pizza",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BURGER = ITEMS.register("burger",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SANDWICH = ITEMS.register("sandwich",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SALAD = ITEMS.register("salad",
+                () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> DESSERTS = ITEMS.register("desserts",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CAKE = ITEMS.register("cake",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> COOKIE = ITEMS.register("cookie",
+                () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PIE = ITEMS.register("pie",
+                () -> new Item(new Item.Properties()));
+
+    // REPAS
     public static final RegistryObject<Item> BOL_RIZ = ITEMS.register("bol_riz",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BOL_RIZ_GLUANT = ITEMS.register("bol_riz_gluant",

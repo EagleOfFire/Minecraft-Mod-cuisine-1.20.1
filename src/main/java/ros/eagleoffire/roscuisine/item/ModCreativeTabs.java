@@ -17,6 +17,48 @@ public class ModCreativeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BOL_RIZ.get()))
                     .title(Component.translatable("creativetab.ros_cuisine_tab"))
                     .displayItems((pParameters, pOutput) -> {
+
+                        pOutput.accept(ModItems.CARROT.get());
+                        pOutput.accept(ModItems.POTATO.get());
+                        pOutput.accept(ModItems.ONION.get());
+                        pOutput.accept(ModItems.GARLIC.get());
+
+                        pOutput.accept(ModItems.CHICKEN.get());
+                        pOutput.accept(ModItems.PORK.get());
+                        pOutput.accept(ModItems.BEEF.get());
+                        pOutput.accept(ModItems.FISH.get());
+
+                        pOutput.accept(ModItems.MILK.get());
+                        pOutput.accept(ModItems.CHEESE.get());
+                        pOutput.accept(ModItems.BUTTER.get());
+
+                        pOutput.accept(ModItems.WHEAT.get());
+                        pOutput.accept(ModItems.BREAD.get());
+                        pOutput.accept(ModItems.PASTA.get());
+
+                        pOutput.accept(ModItems.APPLE.get());
+                        pOutput.accept(ModItems.BANANA.get());
+                        pOutput.accept(ModItems.ORANGE.get());
+
+                        pOutput.accept(ModItems.SOY_SAUCE.get());
+                        pOutput.accept(ModItems.MAYONNAISE.get());
+                        pOutput.accept(ModItems.KETCHUP.get());
+                        pOutput.accept(ModItems.MUSTARD.get());
+
+                        pOutput.accept(ModItems.WATER.get());
+                        pOutput.accept(ModItems.JUICE.get());
+                        pOutput.accept(ModItems.TEA.get());
+                        pOutput.accept(ModItems.COFFEE.get());
+
+                        pOutput.accept(ModItems.PIZZA.get());
+                        pOutput.accept(ModItems.BURGER.get());
+                        pOutput.accept(ModItems.SANDWICH.get());
+                        pOutput.accept(ModItems.SALAD.get());
+
+                        pOutput.accept(ModItems.CAKE.get());
+                        pOutput.accept(ModItems.COOKIE.get());
+                        pOutput.accept(ModItems.PIE.get());
+
                         pOutput.accept(ModItems.BOL_RIZ.get());
                         pOutput.accept(ModItems.BOL_RIZ_GLUANT.get());
                         pOutput.accept(ModItems.MAKI_SAUMON.get());
@@ -41,7 +83,7 @@ public class ModCreativeTabs {
                     })
                     .build());
 
-    public static void register(IEventBus eventBus){
+    public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }
 }
