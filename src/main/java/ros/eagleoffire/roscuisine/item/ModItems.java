@@ -25,11 +25,11 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> OEUFS_BOUILLIS = ITEMS.register("oeufs_bouillis",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ONIGIRI_ALGUE_KOMBU = ITEMS.register("onigir_algue_kombu",
+    public static final RegistryObject<Item> ONIGIRI_ALGUE_KOMBU = ITEMS.register("onigiri_algue_kombu",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ONIGIRI_SAUMON_GRILLEE = ITEMS.register("onigiri_saumon_grillee",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ONIGIRI_THON_MAYO = ITEMS.register("onigir_thon_mayo",
+    public static final RegistryObject<Item> ONIGIRI_THON_MAYO = ITEMS.register("onigiri_thon_mayo",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ONIGIRI_UMEBOSHI = ITEMS.register("onigiri_umeboshi",
             () -> new Item(new Item.Properties()));
