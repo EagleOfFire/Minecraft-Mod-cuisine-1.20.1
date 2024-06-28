@@ -33,7 +33,26 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ONIGIRI_UMEBOSHI = ITEMS.register("onigiri_umeboshi",
             () -> new Item(new Item.Properties()));
-
+    public static final RegistryObject<Item> OEUFS_MAYO = ITEMS.register("oeufs_mayo",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> OYAKODON = ITEMS.register("oyakodon",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SASHIMI_ANCHOIS = ITEMS.register("sashimi_anchois",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SASHIMI_ANGUILLE = ITEMS.register("sashimi_anguille",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SASHIMI_FUGU = ITEMS.register("sashimi_fugu",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SASHIMI_POULPE = ITEMS.register("sashimi_poulpe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SASHIMI_SAUMON = ITEMS.register("sashimi_saumon",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SASHIMI_THON = ITEMS.register("sashimi_thon",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TAKOYAKI = ITEMS.register("takoyaki",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TAKOYAKI_BROCHETTE = ITEMS.register("takoyaki_brochette",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
