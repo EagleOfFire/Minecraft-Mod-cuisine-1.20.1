@@ -11,80 +11,95 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, ROSCuisine.MODID);
 
-    public static final RegistryObject<Item> CARROT = ITEMS.register("carrot",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> POTATO = ITEMS.register("potato",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ONION = ITEMS.register("onion",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GARLIC = ITEMS.register("garlic",
-                () -> new Item(new Item.Properties()));
+    //CHAMPIGNON
+    public static final RegistryObject<Item> CHAMPIGNON_AGARICUS_BISPORUS_COUPE = ITEMS.register("champignon_agaricus_bisporus_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_AMANITE_DES_CESARS_COUPE = ITEMS.register("champignon_amanite_des_cesars_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_BOLET_DE_SATAN_COUPE = ITEMS.register("champignon_bolet_de_satan_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_CALICE_DE_LA_MORT_COUPE = ITEMS.register("champignon_calice_de_la_mort_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_CEPE_COUPE = ITEMS.register("champignon_cepe_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_CHANTERELLE_COUPE = ITEMS.register("champignon_chanterelle_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_COPRIN_COUPE = ITEMS.register("champignon_coprin_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_CORDYCEPS_COUPE = ITEMS.register("champignon_cordyceps_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_CORTIANIRE_SI_JOLI_COUPE = ITEMS.register("champignon_cortianire_si_joli_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_COULEMELLE_COUPE = ITEMS.register("champignon_coulemelle_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_CRINIERE_DE_LION_COUPE = ITEMS.register("champignon_criniere_de_lion_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_CUDONIA_CIRCINAN_COUPE = ITEMS.register("champignon_cudonia_circinan_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_ENOKI_COUPE = ITEMS.register("champignon_enoki_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_ENTOMOLE_LIVIDE_COUPE = ITEMS.register("champignon_entomole_livide_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_FAUSSE_MORILLE_COUPE = ITEMS.register("champignon_fausse_morille_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_MAITAKE_COUPE = ITEMS.register("champignon_maitake_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_MARASME_DES_OREADES_COUPE = ITEMS.register("champignon_marasme_des_oreades_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_MORILLE_COUPE = ITEMS.register("champignon_morille_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_PIED_DE_MOUTON_COUPE = ITEMS.register("champignon_pied_de_mouton_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_REISHI_COUPE = ITEMS.register("champignon_reishi_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_ROSE_DES_PRES_COUPE = ITEMS.register("champignon_rose_des_pres_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_SHIITAKE_COUPE = ITEMS.register("champignon_shiitake_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_SHIMEJI_COUPE = ITEMS.register("champignon_shimeji_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_TERMITOMYCES_TITAN_COUPE = ITEMS.register("champignon_termitomyces_titan_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAMPIGNON_TROMPETTE_DE_LA_MORT_COUPE = ITEMS.register("champignon_trompette_de_la_mort_coupe",
+            () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> CHICKEN = ITEMS.register("chicken",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PORK = ITEMS.register("pork",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> BEEF = ITEMS.register("beef",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> FISH = ITEMS.register("fish",
-                () -> new Item(new Item.Properties()));
-
-    public static final RegistryObject<Item> MILK = ITEMS.register("milk",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> BUTTER = ITEMS.register("butter",
-                () -> new Item(new Item.Properties()));
-
-    public static final RegistryObject<Item> WHEAT = ITEMS.register("wheat",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> BREAD = ITEMS.register("bread",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PASTA = ITEMS.register("pasta",
-                () -> new Item(new Item.Properties()));
-
-    public static final RegistryObject<Item> APPLE = ITEMS.register("apple",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> BANANA = ITEMS.register("banana",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ORANGE = ITEMS.register("orange",
-                () -> new Item(new Item.Properties()));
-
-    public static final RegistryObject<Item> SOY_SAUCE = ITEMS.register("soy_sauce",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> MAYONNAISE = ITEMS.register("mayonnaise",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> KETCHUP = ITEMS.register("ketchup",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> MUSTARD = ITEMS.register("mustard",
-                () -> new Item(new Item.Properties()));
-
-    public static final RegistryObject<Item> WATER = ITEMS.register("water",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> JUICE = ITEMS.register("juice",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> TEA = ITEMS.register("tea",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> COFFEE = ITEMS.register("coffee",
-                () -> new Item(new Item.Properties()));
-
-    public static final RegistryObject<Item> PIZZA = ITEMS.register("pizza",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> BURGER = ITEMS.register("burger",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> SANDWICH = ITEMS.register("sandwich",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> SALAD = ITEMS.register("salad",
-                () -> new Item(new Item.Properties()));
-
-    public static final RegistryObject<Item> DESSERTS = ITEMS.register("desserts",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> CAKE = ITEMS.register("cake",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> COOKIE = ITEMS.register("cookie",
-                () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PIE = ITEMS.register("pie",
-                () -> new Item(new Item.Properties()));
+    //composants
+    public static final RegistryObject<Item> BLE_GRILLE = ITEMS.register("ble_grille",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHAPELURE = ITEMS.register("chapelure",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CURRY_JAUNE = ITEMS.register("curry_jaune",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CURRY_ROUGE = ITEMS.register("curry_rouge",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FARINE = ITEMS.register("farine",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FARINE_DE_RIZ = ITEMS.register("farine_de_riz",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FARINE_DE_RIZ_GLUANT = ITEMS.register("farine_de_riz_gluant",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FARINE_DE_TEMPURA = ITEMS.register("farine_de_tempura",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FECULE_DE_MAIS = ITEMS.register("fecule_de_mais",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FECULE_DE_POMME_DE_TERRE = ITEMS.register("fecule_de_pomme_de_terre",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FECULE_DE_RIZ = ITEMS.register("fecule_de_riz",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GRAINE_SESAME = ITEMS.register("graine_sesame",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GRAINE_SESAME_GRILLE = ITEMS.register("graine_sesame_grille",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POIVRE_BLANC = ITEMS.register("poivre_blanc",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POIVRE_NOIR = ITEMS.register("poivre_noir",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RACINE_DE_LOTUS_COUPE = ITEMS.register("racine_de_lotus_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SEL = ITEMS.register("sel",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SUCRE = ITEMS.register("sucre",
+            () -> new Item(new Item.Properties()));
 
     // REPAS
     public static final RegistryObject<Item> BOL_RIZ = ITEMS.register("bol_riz",
@@ -130,7 +145,7 @@ public class ModItems {
     public static final RegistryObject<Item> TAKOYAKI_BROCHETTE = ITEMS.register("takoyaki_brochette",
             () -> new Item(new Item.Properties()));
 
-    public static void register(IEventBus eventBus){
+    public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
 }

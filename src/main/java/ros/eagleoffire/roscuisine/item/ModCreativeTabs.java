@@ -18,47 +18,54 @@ public class ModCreativeTabs {
                     .title(Component.translatable("creativetab.ros_cuisine_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
-                        pOutput.accept(ModItems.CARROT.get());
-                        pOutput.accept(ModItems.POTATO.get());
-                        pOutput.accept(ModItems.ONION.get());
-                        pOutput.accept(ModItems.GARLIC.get());
+                        //champignon
+                        pOutput.accept(ModItems.CHAMPIGNON_AGARICUS_BISPORUS_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_AMANITE_DES_CESARS_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_BOLET_DE_SATAN_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_CALICE_DE_LA_MORT_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_CEPE_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_CHANTERELLE_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_COPRIN_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_CORDYCEPS_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_CORTIANIRE_SI_JOLI_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_COULEMELLE_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_CRINIERE_DE_LION_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_CUDONIA_CIRCINAN_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_ENOKI_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_ENTOMOLE_LIVIDE_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_FAUSSE_MORILLE_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_MAITAKE_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_MARASME_DES_OREADES_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_MORILLE_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_PIED_DE_MOUTON_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_REISHI_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_ROSE_DES_PRES_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_SHIITAKE_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_SHIMEJI_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_TERMITOMYCES_TITAN_COUPE.get());
+                        pOutput.accept(ModItems.CHAMPIGNON_TROMPETTE_DE_LA_MORT_COUPE.get());
 
-                        pOutput.accept(ModItems.CHICKEN.get());
-                        pOutput.accept(ModItems.PORK.get());
-                        pOutput.accept(ModItems.BEEF.get());
-                        pOutput.accept(ModItems.FISH.get());
+                        // composants
+                        pOutput.accept(ModItems.BLE_GRILLE.get());
+                        pOutput.accept(ModItems.CHAPELURE.get());
+                        pOutput.accept(ModItems.CURRY_JAUNE.get());
+                        pOutput.accept(ModItems.CURRY_ROUGE.get());
+                        pOutput.accept(ModItems.FARINE.get());
+                        pOutput.accept(ModItems.FARINE_DE_RIZ.get());
+                        pOutput.accept(ModItems.FARINE_DE_RIZ_GLUANT.get());
+                        pOutput.accept(ModItems.FARINE_DE_TEMPURA.get());
+                        pOutput.accept(ModItems.FECULE_DE_MAIS.get());
+                        pOutput.accept(ModItems.FECULE_DE_POMME_DE_TERRE.get());
+                        pOutput.accept(ModItems.FECULE_DE_RIZ.get());
+                        pOutput.accept(ModItems.GRAINE_SESAME.get());
+                        pOutput.accept(ModItems.GRAINE_SESAME_GRILLE.get());
+                        pOutput.accept(ModItems.POIVRE_BLANC.get());
+                        pOutput.accept(ModItems.POIVRE_NOIR.get());
+                        pOutput.accept(ModItems.RACINE_DE_LOTUS_COUPE.get());
+                        pOutput.accept(ModItems.SEL.get());
+                        pOutput.accept(ModItems.SUCRE.get());
 
-                        pOutput.accept(ModItems.MILK.get());
-                        pOutput.accept(ModItems.CHEESE.get());
-                        pOutput.accept(ModItems.BUTTER.get());
-
-                        pOutput.accept(ModItems.WHEAT.get());
-                        pOutput.accept(ModItems.BREAD.get());
-                        pOutput.accept(ModItems.PASTA.get());
-
-                        pOutput.accept(ModItems.APPLE.get());
-                        pOutput.accept(ModItems.BANANA.get());
-                        pOutput.accept(ModItems.ORANGE.get());
-
-                        pOutput.accept(ModItems.SOY_SAUCE.get());
-                        pOutput.accept(ModItems.MAYONNAISE.get());
-                        pOutput.accept(ModItems.KETCHUP.get());
-                        pOutput.accept(ModItems.MUSTARD.get());
-
-                        pOutput.accept(ModItems.WATER.get());
-                        pOutput.accept(ModItems.JUICE.get());
-                        pOutput.accept(ModItems.TEA.get());
-                        pOutput.accept(ModItems.COFFEE.get());
-
-                        pOutput.accept(ModItems.PIZZA.get());
-                        pOutput.accept(ModItems.BURGER.get());
-                        pOutput.accept(ModItems.SANDWICH.get());
-                        pOutput.accept(ModItems.SALAD.get());
-
-                        pOutput.accept(ModItems.CAKE.get());
-                        pOutput.accept(ModItems.COOKIE.get());
-                        pOutput.accept(ModItems.PIE.get());
-
+                        // repas
                         pOutput.accept(ModItems.BOL_RIZ.get());
                         pOutput.accept(ModItems.BOL_RIZ_GLUANT.get());
                         pOutput.accept(ModItems.MAKI_SAUMON.get());
