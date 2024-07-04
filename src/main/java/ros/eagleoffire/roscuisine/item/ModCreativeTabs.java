@@ -65,6 +65,42 @@ public class ModCreativeTabs {
                         pOutput.accept(ModItems.SEL.get());
                         pOutput.accept(ModItems.SUCRE.get());
 
+                        // contenant bouteille
+                        pOutput.accept(ModItems.BOUTEILLE_EAU.get());
+                        pOutput.accept(ModItems.BOUTEILLE_EAU_GLACER.get());
+                        pOutput.accept(ModItems.BOUTEILLE_VIDE.get());
+                        pOutput.accept(ModItems.BOUTEILLE_VIN_ROUGE_YAMANASHI.get());
+                        pOutput.accept(ModItems.CONCENTRE_TOMATE.get());
+                        pOutput.accept(ModItems.EAU_SALEE.get());
+                        pOutput.accept(ModItems.HUILE_DE_SESAME.get());
+                        pOutput.accept(ModItems.HUILE_OLIVE.get());
+                        pOutput.accept(ModItems.HUILE_VEGETALE.get());
+                        pOutput.accept(ModItems.LAIT_EN_BOUTEILLE.get());
+                        pOutput.accept(ModItems.MIRIN_EN_BOUTEILLE.get());
+                        pOutput.accept(ModItems.SAKE_DE_CUISINE.get());
+                        pOutput.accept(ModItems.SAUCE_DASHI.get());
+                        pOutput.accept(ModItems.SAUCE_GOMA.get());
+                        pOutput.accept(ModItems.SAUCE_KETCHUP.get());
+                        pOutput.accept(ModItems.SAUCE_MIRIN.get());
+                        pOutput.accept(ModItems.SAUCE_PONZU.get());
+                        pOutput.accept(ModItems.SAUCE_SOBA.get());
+                        pOutput.accept(ModItems.SAUCE_SOJA.get());
+                        pOutput.accept(ModItems.SAUCE_SOJA_SUCREE.get());
+                        pOutput.accept(ModItems.SAUCE_TAKOYAKI.get());
+                        pOutput.accept(ModItems.SAUCE_TEPPANYAKI.get());
+                        pOutput.accept(ModItems.SAUCE_TERIYAKI.get());
+                        pOutput.accept(ModItems.SAUCE_TONKATSU.get());
+                        pOutput.accept(ModItems.SAUCE_TSUYU.get());
+                        pOutput.accept(ModItems.SAUCE_UNAGI.get());
+                        pOutput.accept(ModItems.SAUCE_WASABI.get());
+                        pOutput.accept(ModItems.SAUCE_WORCESTERSHIRE.get());
+                        pOutput.accept(ModItems.SAUCE_YAKINIKU.get());
+                        pOutput.accept(ModItems.SAUCE_YAKISOBA.get());
+                        pOutput.accept(ModItems.SAUCE_YAKITORI.get());
+                        pOutput.accept(ModItems.SAUCE_YAKIZAKANA.get());
+                        pOutput.accept(ModItems.VINAIGRE_BLANC.get());
+                        pOutput.accept(ModItems.VINAIGRE_DE_RIZ.get());
+
                         // repas
                         pOutput.accept(ModItems.BOL_RIZ.get());
                         pOutput.accept(ModItems.BOL_RIZ_GLUANT.get());
