@@ -171,7 +171,223 @@ public class ModItems {
     public static final RegistryObject<Item> VINAIGRE_DE_RIZ = ITEMS.register("vinaigre_de_riz",
             () -> new Item(new Item.Properties()));
 
+    // contenant bouteille
+    public static final RegistryObject<Item> CONSERVE_DE_CAVIAR = ITEMS.register("conserve_de_caviar",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CONSERVE_OEUF_SAUMON = ITEMS.register("conserve_oeuf_saumon",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CONSERVE_VIDE = ITEMS.register("conserve_vide",
+            () -> new Item(new Item.Properties()));
 
+    // contenant pot
+    public static final RegistryObject<Item> BOCALE_ANCHOIS = ITEMS.register("bocale_anchois",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BOUILLON_DE_BOEUF = ITEMS.register("bouillon_de_boeuf",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BOUILLON_DE_DASHI = ITEMS.register("bouillon_de_dashi",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BOUILLON_DE_PORC = ITEMS.register("bouillon_de_porc",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BOUILLON_DE_POULET = ITEMS.register("bouillon_de_poulet",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MAYONNAISE = ITEMS.register("mayonnaise",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MOUTARDE = ITEMS.register("moutarde",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PATE_MISO = ITEMS.register("pate_miso",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PATE_MISO_TRADITIONNEL = ITEMS.register("pate_miso_traditionnel",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POT_VIDE = ITEMS.register("pot_vide",
+            () -> new Item(new Item.Properties()));
+
+    // plantes
+    public static final RegistryObject<Item> AIL = ITEMS.register("ail",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> AIL_COUPEE = ITEMS.register("ail_coupee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> AIL_GOUSSE = ITEMS.register("ail_gousse",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> AIL_PLANTE = ITEMS.register("ail_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ALGUE_NORI = ITEMS.register("algue_nori",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> AVOCAT = ITEMS.register("avocat",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> AVOCAT_COUPEE = ITEMS.register("avocat_coupee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BLE_GRAIN = ITEMS.register("ble_grain",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BLE_TIGE = ITEMS.register("ble_tige",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CAROTTE = ITEMS.register("carotte",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CAROTTE_COUPEE = ITEMS.register("carotte_coupee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CAROTTE_PLANTE = ITEMS.register("carotte_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CAROTTE_RAPEE = ITEMS.register("carotte_rapee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHOU_VERT = ITEMS.register("chou_vert",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHOU_VERT_RAPEE = ITEMS.register("chou_vert_rapee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CHOU_VERT_PLANTE = ITEMS.register("chou_vert_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CIBOULE = ITEMS.register("ciboule",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CIBOULE_COUPEE = ITEMS.register("ciboule_coupee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CIBOULE_PLANTE = ITEMS.register("ciboule_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CONCOMBRE = ITEMS.register("concombre",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CONCOMBRE_COUPEE = ITEMS.register("concombre_coupee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CONCOMBRE_PLANTE = ITEMS.register("concombre_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CURRY_JAUNE_PLANTE = ITEMS.register("curry_jaune_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CURRY_ROUGE_PLANTE = ITEMS.register("curry_rouge_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FENOUIL = ITEMS.register("fenouil",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FENOUIL_PLANTE = ITEMS.register("fenouil_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FEVE_SOJA = ITEMS.register("feve_soja",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GINGEMBRE = ITEMS.register("gingembre",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GINGEMBRE_PLANTE = ITEMS.register("gingembre_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> HARICOT_BLANC = ITEMS.register("haricot_blanc",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> HARICOT_BLANC_PLANTE = ITEMS.register("haricot_blanc_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> HARICOT_ROUGE = ITEMS.register("haricot_rouge",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> HARICOT_ROUGE_PLANTE = ITEMS.register("haricot_rouge_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> KONJAC = ITEMS.register("konjac",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> KONJAC_PLANTE = ITEMS.register("konjac_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MOUTARDE_JAPONAISE_FEUILLES = ITEMS.register("moutarde_japonaise_feuilles",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MOUTARDE_JAPONAISE_GRAINE = ITEMS.register("moutarde_japonaise_graine",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MOUTARDE_JAPONAISE_PLANTE = ITEMS.register("moutarde_japonaise_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NAVET = ITEMS.register("navet",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NAVET_BLANC = ITEMS.register("navet_blanc",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NAVET_BLANC_PLANTE = ITEMS.register("navet_blanc_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NAVET_PLANTE = ITEMS.register("navet_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NAVET_BLANC_RAPEE = ITEMS.register("navet_blanc_rapee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> OIGNON = ITEMS.register("oignon",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> OIGNON_COUPE = ITEMS.register("oignon_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> OIGNON_PLANTE = ITEMS.register("oignon_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> OIGNON_ROUGE = ITEMS.register("oignon_rouge",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> OIGNON_ROUGE_COUPE = ITEMS.register("oignon_rouge_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> OIGNON_ROUGE_PLANTE = ITEMS.register("oignon_rouge_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> OIGNON_VERT = ITEMS.register("oignon_vert",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> OIGNON_VERT_PLANTE = ITEMS.register("oignon_vert_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> OLIVE_NOIR = ITEMS.register("olive_noir",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> OLIVE_VERTE = ITEMS.register("olive_verte",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ORGE_MONDER_GRAIN = ITEMS.register("orge_monder_grain",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ORGE_MONDER_PLANTE = ITEMS.register("orge_monder_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ORGE_MONDER_TIGE = ITEMS.register("orge_monder_tige",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ORGE_PERLER_GRAIN = ITEMS.register("orge_perler_grain",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ORGE_PERLER_PLANTE = ITEMS.register("orge_perler_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ORGE_PERLER_TIGE = ITEMS.register("orge_perler_tige",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PERSIL_COUPEE = ITEMS.register("persil_coupee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PETIT_POIS = ITEMS.register("petit_pois",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PETIT_POIS_EN_COSSE = ITEMS.register("petit_pois_en_cosse",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PETIT_POIS_PLANTE = ITEMS.register("petit_pois_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PIMENT_ROUGE = ITEMS.register("piment_rouge",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PIMENT_ROUGE_PLANTE = ITEMS.register("piment_rouge_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PIMENT_ROUGE_SECHEE = ITEMS.register("piment_rouge_sechee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POIVRE_BLANC_PLANTE = ITEMS.register("poivre_blanc_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POIVRON_ROUGE = ITEMS.register("poivron_rouge",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POIVRON_ROUGE_COUPE = ITEMS.register("poivron_rouge_coupe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POIVRON_ROUGE_PLANTE = ITEMS.register("poivron_rouge_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POMME_DE_TERRE = ITEMS.register("pomme_de_terre",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POMME_DE_TERRE_COUPEE = ITEMS.register("pomme_de_terre_coupee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POMME_DE_TERRE_PLANTE = ITEMS.register("pomme_de_terre_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PRUNE_UMEBOSHI = ITEMS.register("prune_umeboshi",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RACINE_LOTUS = ITEMS.register("racine_lotus",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RIZ_BLANC = ITEMS.register("riz_blanc",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RIZ_BLANC_PLANTE = ITEMS.register("riz_blanc_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RIZ_BLANC_TIGE = ITEMS.register("riz_blanc_tige",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RIZ_BRUN = ITEMS.register("riz_brun",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RIZ_BRUN_PLANTE = ITEMS.register("riz_brun_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RIZ_BRUN_TIGE = ITEMS.register("riz_brun_tige",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RIZ_NOIR = ITEMS.register("riz_noir",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RIZ_NOIR_PLANTE = ITEMS.register("riz_noir_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RIZ_NOIR_TIGE = ITEMS.register("riz_noir_tige",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SESAME_PLANTE = ITEMS.register("sesame_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> THE_BLANC = ITEMS.register("the_blanc",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> THE_NOIR = ITEMS.register("the_noir",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> THE_VERT = ITEMS.register("the_vert",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TOMATE = ITEMS.register("tomate",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TOMATE_COUPEE = ITEMS.register("tomate_coupee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TOMATE_PLANTE = ITEMS.register("tomate_plante",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> WASABI = ITEMS.register("wasabi",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> WASABI_PLANTE = ITEMS.register("wasabi_plante",
+            () -> new Item(new Item.Properties()));
 
     // REPAS
     public static final RegistryObject<Item> BOL_RIZ = ITEMS.register("bol_riz",
