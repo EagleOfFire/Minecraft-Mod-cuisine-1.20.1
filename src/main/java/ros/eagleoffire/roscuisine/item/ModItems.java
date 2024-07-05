@@ -389,6 +389,80 @@ public class ModItems {
     public static final RegistryObject<Item> WASABI_PLANTE = ITEMS.register("wasabi_plante",
             () -> new Item(new Item.Properties()));
 
+    //pre prepare
+    public static final RegistryObject<Item> ALGUE_KOMBU = ITEMS.register("algue_kombu",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BEURRE = ITEMS.register("beurre",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BEURRE_COUPEE = ITEMS.register("beurre_coupee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BONITE_SECHEE = ITEMS.register("bonite_sechee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BONITE_SECHEE_TRANCHEE = ITEMS.register("bonite_sechee_tranchee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BOULETTE_DE_POISSON_CRU = ITEMS.register("boulette_de_poisson_cru",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GINGEMBRE_MARINER = ITEMS.register("gingembre_mariner",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> KAMABOKO = ITEMS.register("kamaboko",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MAKI_ROLL_SAUMON = ITEMS.register("maki_roll_saumon",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MAKI_ROLL_THON = ITEMS.register("maki_roll_thon",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MOCHI = ITEMS.register("mochi",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NATTO = ITEMS.register("natto",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NORI = ITEMS.register("nori",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NORI_FLOCON = ITEMS.register("nori_flocon",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NOUILLES_RAMEN_FRAICHES = ITEMS.register("nouilles_ramen_fraiches",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NOUILLES_RAMEN_SECHEES = ITEMS.register("nouilles_ramen_sechees",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NOUILLES_SOBA_SECHEES = ITEMS.register("nouilles_soba_sechees",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NOUILLES_SOMEN_SECHEES = ITEMS.register("nouilles_somen_sechees",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NOUILLES_UDON_FRAICHES = ITEMS.register("nouilles_udon_fraiches",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> NOUILLES_UDON_SECHEES = ITEMS.register("nouilles_udon_sechees",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> OYAKODON_PREPARATION = ITEMS.register("oyakodon_preparation",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PATE_A_TAKOYAKI = ITEMS.register("pate_a_takoyaki",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RIZ_BLANC_CHAUD = ITEMS.register("riz_blanc_chaud",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RIZ_BRUN_CHAUD = ITEMS.register("riz_brun_chaud",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RIZ_GLUANT = ITEMS.register("riz_gluant",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RIZ_GLUANT_CHAUD = ITEMS.register("riz_gluant_chaud",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RIZ_NOIR_CHAUD = ITEMS.register("riz_noir_chaud",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TAKOYAKI_CRU = ITEMS.register("takoyaki_cru",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TAKOYAKI_CUIT = ITEMS.register("takoyaki_cuit",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TEMPURA_CREVETTES_CHAUD = ITEMS.register("tempura_crevettes_chaud",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TEMPURA_LEGUMES_CHAUD = ITEMS.register("tempura_legumes_chaud",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TOFU = ITEMS.register("tofu",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TOFU_COUPEE = ITEMS.register("tofu_coupee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TOFU_FUMEE = ITEMS.register("tofu_fumee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TOFU_FUMEE_COUPEE = ITEMS.register("tofu_fumee_coupee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> UMEBOSHI = ITEMS.register("umeboshi",
+            () -> new Item(new Item.Properties()));
+
     // REPAS
     public static final RegistryObject<Item> BOL_RIZ = ITEMS.register("bol_riz",
             () -> new Item(new Item.Properties()));

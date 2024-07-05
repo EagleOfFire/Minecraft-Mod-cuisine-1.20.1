@@ -213,6 +213,44 @@ public class ModCreativeTabs {
                         pOutput.accept(ModItems.WASABI.get());
                         pOutput.accept(ModItems.WASABI_PLANTE.get());
 
+                        // pre prepare
+                        pOutput.accept(ModItems.ALGUE_KOMBU.get());
+                        pOutput.accept(ModItems.BEURRE.get());
+                        pOutput.accept(ModItems.BEURRE_COUPEE.get());
+                        pOutput.accept(ModItems.BONITE_SECHEE.get());
+                        pOutput.accept(ModItems.BONITE_SECHEE_TRANCHEE.get());
+                        pOutput.accept(ModItems.BOULETTE_DE_POISSON_CRU.get());
+                        pOutput.accept(ModItems.GINGEMBRE_MARINER.get());
+                        pOutput.accept(ModItems.KAMABOKO.get());
+                        pOutput.accept(ModItems.MAKI_ROLL_SAUMON.get());
+                        pOutput.accept(ModItems.MAKI_ROLL_THON.get());
+                        pOutput.accept(ModItems.MOCHI.get());
+                        pOutput.accept(ModItems.NATTO.get());
+                        pOutput.accept(ModItems.NORI.get());
+                        pOutput.accept(ModItems.NORI_FLOCON.get());
+                        pOutput.accept(ModItems.NOUILLES_RAMEN_FRAICHES.get());
+                        pOutput.accept(ModItems.NOUILLES_RAMEN_SECHEES.get());
+                        pOutput.accept(ModItems.NOUILLES_SOBA_SECHEES.get());
+                        pOutput.accept(ModItems.NOUILLES_SOMEN_SECHEES.get());
+                        pOutput.accept(ModItems.NOUILLES_UDON_FRAICHES.get());
+                        pOutput.accept(ModItems.NOUILLES_UDON_SECHEES.get());
+                        pOutput.accept(ModItems.OYAKODON_PREPARATION.get());
+                        pOutput.accept(ModItems.PATE_A_TAKOYAKI.get());
+                        pOutput.accept(ModItems.RIZ_BLANC_CHAUD.get());
+                        pOutput.accept(ModItems.RIZ_BRUN_CHAUD.get());
+                        pOutput.accept(ModItems.RIZ_GLUANT.get());
+                        pOutput.accept(ModItems.RIZ_GLUANT_CHAUD.get());
+                        pOutput.accept(ModItems.RIZ_NOIR_CHAUD.get());
+                        pOutput.accept(ModItems.TAKOYAKI_CRU.get());
+                        pOutput.accept(ModItems.TAKOYAKI_CUIT.get());
+                        pOutput.accept(ModItems.TEMPURA_CREVETTES_CHAUD.get());
+                        pOutput.accept(ModItems.TEMPURA_LEGUMES_CHAUD.get());
+                        pOutput.accept(ModItems.TOFU.get());
+                        pOutput.accept(ModItems.TOFU_COUPEE.get());
+                        pOutput.accept(ModItems.TOFU_FUMEE.get());
+                        pOutput.accept(ModItems.TOFU_FUMEE_COUPEE.get());
+                        pOutput.accept(ModItems.UMEBOSHI.get());
+
                         // repas
                         pOutput.accept(ModItems.BOL_RIZ.get());
                         pOutput.accept(ModItems.BOL_RIZ_GLUANT.get());
