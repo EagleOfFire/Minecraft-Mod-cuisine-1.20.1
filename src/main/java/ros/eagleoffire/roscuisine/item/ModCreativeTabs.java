@@ -251,6 +251,14 @@ public class ModCreativeTabs {
                         pOutput.accept(ModItems.TOFU_FUMEE_COUPEE.get());
                         pOutput.accept(ModItems.UMEBOSHI.get());
 
+                        // sacs
+                        pOutput.accept(ModItems.SAC_ORGE_MONDER.get());
+                        pOutput.accept(ModItems.SAC_ORGE_PERLER.get());
+                        pOutput.accept(ModItems.SAC_RIZ_BLANC.get());
+                        pOutput.accept(ModItems.SAC_RIZ_BRUN.get());
+                        pOutput.accept(ModItems.SAC_RIZ_NOIR.get());
+                        pOutput.accept(ModItems.SAC_VIDE.get());
+
                         // repas
                         pOutput.accept(ModItems.BOL_RIZ.get());
                         pOutput.accept(ModItems.BOL_RIZ_GLUANT.get());
@@ -273,6 +281,63 @@ public class ModCreativeTabs {
                         pOutput.accept(ModItems.SASHIMI_THON.get());
                         pOutput.accept(ModItems.TAKOYAKI.get());
                         pOutput.accept(ModItems.TAKOYAKI_BROCHETTE.get());
+
+                        //outils
+                        pOutput.accept(ModItems.ASSIETTE.get());
+                        pOutput.accept(ModItems.ASSIETTE_SALE.get());
+                        pOutput.accept(ModItems.ASSIETTE_WASABI.get());
+                        pOutput.accept(ModItems.BOL.get());
+                        pOutput.accept(ModItems.BOL_SALE.get());
+                        pOutput.accept(ModItems.COUTEAU_DE_CUISINE.get());
+                        pOutput.accept(ModItems.HACHOIR_CUISINE.get());
+                        pOutput.accept(ModItems.MEULE.get());
+                        pOutput.accept(ModItems.MORTIER_A_PILLON.get());
+                        pOutput.accept(ModItems.RAPE.get());
+
+                        //viandes
+                        pOutput.accept(ModItems.ANCHOIS_CRU.get());
+                        pOutput.accept(ModItems.CALAMAR.get());
+                        pOutput.accept(ModItems.CREVETTE_EPLUCHEE.get());
+                        pOutput.accept(ModItems.OEUF_CUIT.get());
+                        pOutput.accept(ModItems.POISSON_CARPE.get());
+                        pOutput.accept(ModItems.POISSON_THON.get());
+                        pOutput.accept(ModItems.POULET_BLANC_CRU.get());
+                        pOutput.accept(ModItems.POULPE_TENTACULE.get());
+                        pOutput.accept(ModItems.THON_CRU.get());
+                        pOutput.accept(ModItems.ANGUILLE_CRU.get());
+                        pOutput.accept(ModItems.CALAMAR_CRU.get());
+                        pOutput.accept(ModItems.FOIE_DE_FUGU.get());
+                        pOutput.accept(ModItems.OEUF_DE_POULE.get());
+                        pOutput.accept(ModItems.POISSON_COELACANTH.get());
+                        pOutput.accept(ModItems.POISSON_TRUITE_ARC_EN_CIEL.get());
+                        pOutput.accept(ModItems.POULET_CUISSE_CRU.get());
+                        pOutput.accept(ModItems.POULPE.get());
+                        pOutput.accept(ModItems.THON_FUMEE.get());
+                        pOutput.accept(ModItems.ANGUILLE_GRILLEE.get());
+                        pOutput.accept(ModItems.CARCASSE_DE_POULET.get());
+                        pOutput.accept(ModItems.FUGU_CRU.get());
+                        pOutput.accept(ModItems.OEUF_JAUNE.get());
+                        pOutput.accept(ModItems.POISSON_FUGU.get());
+                        pOutput.accept(ModItems.POISSON_SAUMON_QUINNAT.get());
+                        pOutput.accept(ModItems.BOEUF_COUPEE.get());
+                        pOutput.accept(ModItems.CREVETTE.get());
+                        pOutput.accept(ModItems.OEUF_BLANC.get());
+                        pOutput.accept(ModItems.POISSON_ANCHOIS.get());
+                        pOutput.accept(ModItems.POISSON_SAUMON_SOHO.get());
+                        pOutput.accept(ModItems.POULET_AILE.get());
+                        pOutput.accept(ModItems.POULET_SANS_PATES.get());
+                        pOutput.accept(ModItems.SAUMON_GRILLEE.get());
+                        pOutput.accept(ModItems.BOEUF_CRU.get());
+                        pOutput.accept(ModItems.CREVETTE_COUPEE.get());
+                        pOutput.accept(ModItems.OEUF_BOUILLI.get());
+                        pOutput.accept(ModItems.POISSON_ANGUILLE.get());
+                        pOutput.accept(ModItems.THON_BOUILLI.get());
+                        pOutput.accept(ModItems.THON_GRILLEE.get());
+                        pOutput.accept(ModItems.POULET_ENTIER.get());
+                        pOutput.accept(ModItems.PORC_CRU.get());
+                        pOutput.accept(ModItems.PORC_COUPEE.get());
+                        pOutput.accept(ModItems.SAUMON_CRU.get());
+                        pOutput.accept(ModItems.POULET_SANS_AILES.get());
                     })
                     .build());
 

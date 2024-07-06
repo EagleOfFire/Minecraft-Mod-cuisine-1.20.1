@@ -463,6 +463,20 @@ public class ModItems {
     public static final RegistryObject<Item> UMEBOSHI = ITEMS.register("umeboshi",
             () -> new Item(new Item.Properties()));
 
+    // sacs
+    public static final RegistryObject<Item> SAC_ORGE_MONDER = ITEMS.register("sac_orge_monder",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SAC_ORGE_PERLER = ITEMS.register("sac_orge_perler",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SAC_RIZ_BLANC = ITEMS.register("sac_riz_blanc",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SAC_RIZ_BRUN = ITEMS.register("sac_riz_brun",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SAC_RIZ_NOIR = ITEMS.register("sac_riz_noir",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SAC_VIDE = ITEMS.register("sac_vide",
+            () -> new Item(new Item.Properties()));
+
     // REPAS
     public static final RegistryObject<Item> BOL_RIZ = ITEMS.register("bol_riz",
             () -> new Item(new Item.Properties()));
@@ -505,6 +519,116 @@ public class ModItems {
     public static final RegistryObject<Item> TAKOYAKI = ITEMS.register("takoyaki",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> TAKOYAKI_BROCHETTE = ITEMS.register("takoyaki_brochette",
+            () -> new Item(new Item.Properties()));
+
+    // outils
+    public static final RegistryObject<Item> ASSIETTE = ITEMS.register("assiette",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ASSIETTE_SALE = ITEMS.register("assiette_sale",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ASSIETTE_WASABI = ITEMS.register("assiette_wasabi",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BOL = ITEMS.register("bol",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BOL_SALE = ITEMS.register("bol_sale",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> COUTEAU_DE_CUISINE = ITEMS.register("couteau_de_cuisine",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> HACHOIR_CUISINE = ITEMS.register("hachoir_cuisine",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MEULE = ITEMS.register("meule",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MORTIER_A_PILLON = ITEMS.register("mortier_a_pillon",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAPE = ITEMS.register("rape",
+            () -> new Item(new Item.Properties()));
+
+    //viandes
+    public static final RegistryObject<Item> ANCHOIS_CRU = ITEMS.register("anchois_cru",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ANGUILLE_CRU = ITEMS.register("anguille_cru",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ANGUILLE_GRILLEE = ITEMS.register("anguille_grillee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BOEUF_COUPEE = ITEMS.register("boeuf_coupee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BOEUF_CRU = ITEMS.register("boeuf_cru",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CALAMAR = ITEMS.register("calamar",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CALAMAR_CRU = ITEMS.register("calamar_cru",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CARCASSE_DE_POULET = ITEMS.register("carcasse_de_poulet",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CREVETTE = ITEMS.register("crevette",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CREVETTE_COUPEE = ITEMS.register("crevette_coupee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CREVETTE_EPLUCHEE = ITEMS.register("crevette_epluchee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FOIE_DE_FUGU = ITEMS.register("foie_de_fugu",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FUGU_CRU = ITEMS.register("fugu_cru",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> OEUF_BLANC = ITEMS.register("oeuf_blanc",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> OEUF_BOUILLI = ITEMS.register("oeuf_bouilli",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> OEUF_CUIT = ITEMS.register("oeuf_cuit",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> OEUF_DE_POULE = ITEMS.register("oeuf_de_poule",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> OEUF_JAUNE = ITEMS.register("oeuf_jaune",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POISSON_ANCHOIS = ITEMS.register("poisson_anchois",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POISSON_ANGUILLE = ITEMS.register("poisson_anguille",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POISSON_CARPE = ITEMS.register("poisson_carpe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POISSON_COELACANTH = ITEMS.register("poisson_coelacanth",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POISSON_FUGU = ITEMS.register("poisson_fugu",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POISSON_SAUMON_QUINNAT = ITEMS.register("poisson_saumon_quinnat",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POISSON_SAUMON_SOHO = ITEMS.register("poisson_saumon_soho",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POISSON_THON = ITEMS.register("poisson_thon",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POISSON_TRUITE_ARC_EN_CIEL = ITEMS.register("poisson_truite_arc_en_ciel",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PORC_COUPEE = ITEMS.register("porc_coupee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PORC_CRU = ITEMS.register("porc_cru",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POULET_AILE = ITEMS.register("poulet_aile",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POULET_BLANC_CRU = ITEMS.register("poulet_blanc_cru",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POULET_CUISSE_CRU = ITEMS.register("poulet_cuisse_cru",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POULET_ENTIER = ITEMS.register("poulet_entier",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POULET_SANS_AILES = ITEMS.register("poulet_sans_ailes",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POULET_SANS_PATES = ITEMS.register("poulet_sans_pates",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POULPE_TENTACULE = ITEMS.register("poulpe_tentacule",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POULPE = ITEMS.register("poulpe",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SAUMON_CRU = ITEMS.register("saumon_cru",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SAUMON_GRILLEE = ITEMS.register("saumon_grillee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> THON_BOUILLI = ITEMS.register("thon_bouilli",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> THON_CRU = ITEMS.register("thon_cru",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> THON_FUMEE = ITEMS.register("thon_fumee",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> THON_GRILLEE = ITEMS.register("thon_grillee",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
