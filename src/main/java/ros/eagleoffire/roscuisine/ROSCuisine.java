@@ -25,6 +25,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
+import ros.eagleoffire.roscuisine.block.entity.ModBlockEntities;
 import ros.eagleoffire.roscuisine.item.ModCreativeTabs;
 import ros.eagleoffire.roscuisine.item.ModItems;
 
@@ -39,6 +40,8 @@ public class ROSCuisine {
         ModCreativeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+
+        ModBlockEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
