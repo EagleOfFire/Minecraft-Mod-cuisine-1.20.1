@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import ros.eagleoffire.roscuisine.ROSCuisine;
+import ros.eagleoffire.roscuisine.block.ModBlocks;
 
 public class ModCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -338,6 +339,8 @@ public class ModCreativeTabs {
                         pOutput.accept(ModItems.PORC_COUPEE.get());
                         pOutput.accept(ModItems.SAUMON_CRU.get());
                         pOutput.accept(ModItems.POULET_SANS_AILES.get());
+
+                        pOutput.accept(ModBlocks.FUMOIR.get());
                     })
                     .build());
 

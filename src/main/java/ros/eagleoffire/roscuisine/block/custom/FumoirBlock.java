@@ -23,7 +23,7 @@ import ros.eagleoffire.roscuisine.block.entity.FumoirBlockEntity;
 import ros.eagleoffire.roscuisine.block.entity.ModBlockEntities;
 
 public class FumoirBlock extends BaseEntityBlock {
-    public static final VoxelShape SHAPE = Block.box(0,0,0,16,12,16);
+    public static final VoxelShape SHAPE = Block.box(0,0,0,16,16,16);
 
     public FumoirBlock(Properties pProperties) {
         super(pProperties);
@@ -78,7 +78,7 @@ public class FumoirBlock extends BaseEntityBlock {
             return null;
         }
 
-        return createTickerHelper(pBlockEntityType, ModBlockEntities.FUMOIR_BE.get()),
-        (pLevel, pPos,pState, pBlockEntityType -> pBlockEntityType.tick(pLevel1, pPose, pState1))
+        return createTickerHelper(pBlockEntityType, ModBlockEntities.FUMOIR_BE.get(),
+                (pLevel1, pPos, pState1, pBlockEntity) -> pBlockEntity.tick(pLevel1, pPos, pState1));
     }
 }

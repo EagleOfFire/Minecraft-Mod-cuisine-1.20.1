@@ -14,7 +14,7 @@ public class ModBlockEntities {
             DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, ROSCuisine.MODID);
 
     public static final RegistryObject<BlockEntityType<FumoirBlockEntity>> FUMOIR_BE =
-            BLOCK_ENTITIES.register("gem_polishing_be", () ->
+            BLOCK_ENTITIES.register("fumoir_be", () ->
                     BlockEntityType.Builder.of(FumoirBlockEntity::new,
                             ModBlocks.FUMOIR.get()).build(null));
 

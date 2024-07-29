@@ -2,6 +2,7 @@ package ros.eagleoffire.roscuisine;
 
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
@@ -25,9 +26,12 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
+import ros.eagleoffire.roscuisine.block.ModBlocks;
 import ros.eagleoffire.roscuisine.block.entity.ModBlockEntities;
 import ros.eagleoffire.roscuisine.item.ModCreativeTabs;
 import ros.eagleoffire.roscuisine.item.ModItems;
+import ros.eagleoffire.roscuisine.screen.FumoirScreen;
+import ros.eagleoffire.roscuisine.screen.ModMenuTypes;
 
 @Mod(ROSCuisine.MODID)
 public class ROSCuisine {
@@ -40,8 +44,10 @@ public class ROSCuisine {
         ModCreativeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -69,7 +75,7 @@ public class ROSCuisine {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            MenuScreens.register(ModMenuTypes.FUMOIR_MENU.get(), FumoirScreen::new);
         }
     }
 }

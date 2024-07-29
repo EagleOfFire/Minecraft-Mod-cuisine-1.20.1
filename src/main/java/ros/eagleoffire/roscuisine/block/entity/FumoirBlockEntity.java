@@ -23,6 +23,7 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import ros.eagleoffire.roscuisine.screen.FumoirMenu;
 
 public class FumoirBlockEntity extends BlockEntity implements MenuProvider {
     private final ItemStackHandler itemHandler = new ItemStackHandler(10);
@@ -108,8 +109,8 @@ public class FumoirBlockEntity extends BlockEntity implements MenuProvider {
 
     @Nullable
     @Override
-    public AbstractContainerMenu createMenu(int i, Inventory inventory, Player player) {
-        return
+    public AbstractContainerMenu createMenu(int pContainerId, Inventory inventory, Player player) {
+        return new FumoirMenu(pContainerId, inventory, this, this.data);
     }
 
     @Override
@@ -150,7 +151,7 @@ public class FumoirBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     private boolean hasRecipe() {
-        boolean has
+        return true;
     }
 
     private boolean hasProgressFinished() {
