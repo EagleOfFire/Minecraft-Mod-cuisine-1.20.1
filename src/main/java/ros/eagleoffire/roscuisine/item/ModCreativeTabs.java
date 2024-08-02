@@ -260,41 +260,6 @@ public class ModCreativeTabs {
                         pOutput.accept(ModItems.SAC_RIZ_NOIR.get());
                         pOutput.accept(ModItems.SAC_VIDE.get());
 
-                        // repas
-                        pOutput.accept(ModItems.BOL_RIZ.get());
-                        pOutput.accept(ModItems.BOL_RIZ_GLUANT.get());
-                        pOutput.accept(ModItems.MAKI_SAUMON.get());
-                        pOutput.accept(ModItems.MAKI_THON.get());
-                        pOutput.accept(ModItems.MOCHI_NATURE.get());
-                        pOutput.accept(ModItems.OEUF_AU_PLAT.get());
-                        pOutput.accept(ModItems.OEUFS_BOUILLIS.get());
-                        pOutput.accept(ModItems.ONIGIRI_ALGUE_KOMBU.get());
-                        pOutput.accept(ModItems.ONIGIRI_SAUMON_GRILLEE.get());
-                        pOutput.accept(ModItems.ONIGIRI_THON_MAYO.get());
-                        pOutput.accept(ModItems.ONIGIRI_UMEBOSHI.get());
-                        pOutput.accept(ModItems.OEUFS_MAYO.get());
-                        pOutput.accept(ModItems.OYAKODON.get());
-                        pOutput.accept(ModItems.SASHIMI_ANCHOIS.get());
-                        pOutput.accept(ModItems.SASHIMI_ANGUILLE.get());
-                        pOutput.accept(ModItems.SASHIMI_FUGU.get());
-                        pOutput.accept(ModItems.SASHIMI_POULPE.get());
-                        pOutput.accept(ModItems.SASHIMI_SAUMON.get());
-                        pOutput.accept(ModItems.SASHIMI_THON.get());
-                        pOutput.accept(ModItems.TAKOYAKI.get());
-                        pOutput.accept(ModItems.TAKOYAKI_BROCHETTE.get());
-
-                        //outils
-                        pOutput.accept(ModItems.ASSIETTE.get());
-                        pOutput.accept(ModItems.ASSIETTE_SALE.get());
-                        pOutput.accept(ModItems.ASSIETTE_WASABI.get());
-                        pOutput.accept(ModItems.BOL.get());
-                        pOutput.accept(ModItems.BOL_SALE.get());
-                        pOutput.accept(ModItems.COUTEAU_DE_CUISINE.get());
-                        pOutput.accept(ModItems.HACHOIR_CUISINE.get());
-                        pOutput.accept(ModItems.MEULE.get());
-                        pOutput.accept(ModItems.MORTIER_A_PILLON.get());
-                        pOutput.accept(ModItems.RAPE.get());
-
                         //viandes
                         pOutput.accept(ModItems.ANCHOIS_CRU.get());
                         pOutput.accept(ModItems.CALAMAR.get());
@@ -339,6 +304,41 @@ public class ModCreativeTabs {
                         pOutput.accept(ModItems.PORC_COUPEE.get());
                         pOutput.accept(ModItems.SAUMON_CRU.get());
                         pOutput.accept(ModItems.POULET_SANS_AILES.get());
+
+                        // repas
+                        pOutput.accept(ModItems.BOL_RIZ.get());
+                        pOutput.accept(ModItems.BOL_RIZ_GLUANT.get());
+                        pOutput.accept(ModItems.MAKI_SAUMON.get());
+                        pOutput.accept(ModItems.MAKI_THON.get());
+                        pOutput.accept(ModItems.MOCHI_NATURE.get());
+                        pOutput.accept(ModItems.OEUF_AU_PLAT.get());
+                        pOutput.accept(ModItems.OEUFS_BOUILLIS.get());
+                        pOutput.accept(ModItems.ONIGIRI_ALGUE_KOMBU.get());
+                        pOutput.accept(ModItems.ONIGIRI_SAUMON_GRILLEE.get());
+                        pOutput.accept(ModItems.ONIGIRI_THON_MAYO.get());
+                        pOutput.accept(ModItems.ONIGIRI_UMEBOSHI.get());
+                        pOutput.accept(ModItems.OEUFS_MAYO.get());
+                        pOutput.accept(ModItems.OYAKODON.get());
+                        pOutput.accept(ModItems.SASHIMI_ANCHOIS.get());
+                        pOutput.accept(ModItems.SASHIMI_ANGUILLE.get());
+                        pOutput.accept(ModItems.SASHIMI_FUGU.get());
+                        pOutput.accept(ModItems.SASHIMI_POULPE.get());
+                        pOutput.accept(ModItems.SASHIMI_SAUMON.get());
+                        pOutput.accept(ModItems.SASHIMI_THON.get());
+                        pOutput.accept(ModItems.TAKOYAKI.get());
+                        pOutput.accept(ModItems.TAKOYAKI_BROCHETTE.get());
+
+                        //outils
+                        pOutput.accept(ModItems.ASSIETTE.get());
+                        pOutput.accept(ModItems.ASSIETTE_SALE.get());
+                        pOutput.accept(ModItems.ASSIETTE_WASABI.get());
+                        pOutput.accept(ModItems.BOL.get());
+                        pOutput.accept(ModItems.BOL_SALE.get());
+                        pOutput.accept(ModItems.COUTEAU_DE_CUISINE.get());
+                        pOutput.accept(ModItems.HACHOIR_CUISINE.get());
+                        pOutput.accept(ModItems.MEULE.get());
+                        pOutput.accept(ModItems.MORTIER_A_PILLON.get());
+                        pOutput.accept(ModItems.RAPE.get());
 
                         pOutput.accept(ModBlocks.FUMOIR.get());
                     })
