@@ -1,6 +1,8 @@
 package ros.eagleoffire.roscuisine.item;
 
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -479,47 +481,47 @@ public class ModItems {
 
     // REPAS
     public static final RegistryObject<Item> BOL_RIZ = ITEMS.register("bol_riz",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.BOL_RIZ)));
     public static final RegistryObject<Item> BOL_RIZ_GLUANT = ITEMS.register("bol_riz_gluant",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.BOL_RIZ_GLUANT)));
     public static final RegistryObject<Item> MAKI_SAUMON = ITEMS.register("maki_saumon",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.MAKI_SAUMON)));
     public static final RegistryObject<Item> MAKI_THON = ITEMS.register("maki_thon",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.MAKI_THON)));
     public static final RegistryObject<Item> MOCHI_NATURE = ITEMS.register("mochi_nature",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.MOCHI_NATURE)));
     public static final RegistryObject<Item> OEUF_AU_PLAT = ITEMS.register("oeuf_au_plat",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.OEUF_AU_PLAT)));
     public static final RegistryObject<Item> OEUFS_BOUILLIS = ITEMS.register("oeufs_bouillis",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.OEUFS_BOUILLIS)));
     public static final RegistryObject<Item> ONIGIRI_ALGUE_KOMBU = ITEMS.register("onigiri_algue_kombu",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.ONIGIRI_ALGUE_KOMBU)));
     public static final RegistryObject<Item> ONIGIRI_SAUMON_GRILLEE = ITEMS.register("onigiri_saumon_grillee",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.ONIGIRI_SAUMON_GRILLEE)));
     public static final RegistryObject<Item> ONIGIRI_THON_MAYO = ITEMS.register("onigiri_thon_mayo",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.ONIGIRI_THON_MAYO)));
     public static final RegistryObject<Item> ONIGIRI_UMEBOSHI = ITEMS.register("onigiri_umeboshi",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.ONIGIRI_UMEBOSHI)));
     public static final RegistryObject<Item> OEUFS_MAYO = ITEMS.register("oeufs_mayo",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.OEUFS_MAYO)));
     public static final RegistryObject<Item> OYAKODON = ITEMS.register("oyakodon",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.OYAKODON)));
     public static final RegistryObject<Item> SASHIMI_ANCHOIS = ITEMS.register("sashimi_anchois",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.SASHIMI_ANCHOIS)));
     public static final RegistryObject<Item> SASHIMI_ANGUILLE = ITEMS.register("sashimi_anguille",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.SASHIMI_ANGUILLE)));
     public static final RegistryObject<Item> SASHIMI_FUGU = ITEMS.register("sashimi_fugu",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.SASHIMI_FUGU)));
     public static final RegistryObject<Item> SASHIMI_POULPE = ITEMS.register("sashimi_poulpe",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.SASHIMI_POULPE)));
     public static final RegistryObject<Item> SASHIMI_SAUMON = ITEMS.register("sashimi_saumon",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.SASHIMI_SAUMON)));
     public static final RegistryObject<Item> SASHIMI_THON = ITEMS.register("sashimi_thon",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.SASHIMI_THON)));
     public static final RegistryObject<Item> TAKOYAKI = ITEMS.register("takoyaki",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.TAKOYAKI)));
     public static final RegistryObject<Item> TAKOYAKI_BROCHETTE = ITEMS.register("takoyaki_brochette",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.TAKOYAKI_BROCHETTE)));
 
     // outils
     public static final RegistryObject<Item> ASSIETTE = ITEMS.register("assiette",
@@ -533,15 +535,15 @@ public class ModItems {
     public static final RegistryObject<Item> BOL_SALE = ITEMS.register("bol_sale",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> COUTEAU_DE_CUISINE = ITEMS.register("couteau_de_cuisine",
-            () -> new Item(new Item.Properties()));
+            () -> new SwordItem(Tiers.IRON, 4, 2, new Item.Properties()));
     public static final RegistryObject<Item> HACHOIR_CUISINE = ITEMS.register("hachoir_cuisine",
-            () -> new Item(new Item.Properties()));
+            () -> new SwordItem(Tiers.IRON, 4, 2, new Item.Properties()));
     public static final RegistryObject<Item> MEULE = ITEMS.register("meule",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> MORTIER_A_PILLON = ITEMS.register("mortier_a_pillon",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAPE = ITEMS.register("rape",
-            () -> new Item(new Item.Properties()));
+            () -> new SwordItem(Tiers.IRON, 4, 2, new Item.Properties()));
 
     //viandes
     public static final RegistryObject<Item> ANCHOIS_CRU = ITEMS.register("anchois_cru",
