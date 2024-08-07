@@ -24,7 +24,7 @@ public class FumoirMenu extends AbstractContainerMenu {
 
     public FumoirMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data) {
         super(ModMenuTypes.FUMOIR_MENU.get(), pContainerId);
-        checkContainerSize(inv, 10);
+        checkContainerSize(inv, 11);
         blockEntity = ((FumoirBlockEntity) entity);
         this.level = inv.player.level();
         this.data = data;
@@ -33,8 +33,19 @@ public class FumoirMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 80, 11));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 80, 59));
+            this.addSlot(new SlotItemHandler(iItemHandler, 0, 26, 12));
+            this.addSlot(new SlotItemHandler(iItemHandler, 1, 44, 12));
+            this.addSlot(new SlotItemHandler(iItemHandler, 2, 62, 12));
+            this.addSlot(new SlotItemHandler(iItemHandler, 3, 26, 30));
+            this.addSlot(new SlotItemHandler(iItemHandler, 4, 44, 30));
+            this.addSlot(new SlotItemHandler(iItemHandler, 5, 62, 30));
+            this.addSlot(new SlotItemHandler(iItemHandler, 6, 26, 48));
+            this.addSlot(new SlotItemHandler(iItemHandler, 7, 44, 48));
+            this.addSlot(new SlotItemHandler(iItemHandler, 8, 62, 48));
+
+            this.addSlot(new SlotItemHandler(iItemHandler, 9, 134, 30));
+            this.addSlot(new SlotItemHandler(iItemHandler, 10, 98,56));
+
         });
 
         addDataSlots(data);

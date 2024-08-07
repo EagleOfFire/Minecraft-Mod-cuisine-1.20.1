@@ -26,7 +26,7 @@ import org.jetbrains.annotations.Nullable;
 import ros.eagleoffire.roscuisine.screen.FumoirMenu;
 
 public class FumoirBlockEntity extends BlockEntity implements MenuProvider {
-    private final ItemStackHandler itemHandler = new ItemStackHandler(10);
+    private final ItemStackHandler itemHandler = new ItemStackHandler(11);
 
     private static final int INPUT_SLOT_1 = 0;
     private static final int INPUT_SLOT_2 = 1;
@@ -38,6 +38,7 @@ public class FumoirBlockEntity extends BlockEntity implements MenuProvider {
     private static final int INPUT_SLOT_8 = 7;
     private static final int INPUT_SLOT_9 = 8;
     private static final int OUTPUT_SLOT = 9;
+    private static final int FUEL_SLOT = 10;
 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
 
@@ -151,8 +152,8 @@ public class FumoirBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     private boolean hasRecipe() {
-        return true;
-    }
+        return false;
+    } //was on true
 
     private boolean hasProgressFinished() {
         return progress >= maxProgress;
