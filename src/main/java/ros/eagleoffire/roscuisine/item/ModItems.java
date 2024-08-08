@@ -527,23 +527,23 @@ public class ModItems {
     public static final RegistryObject<Item> ASSIETTE = ITEMS.register("assiette",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ASSIETTE_SALE = ITEMS.register("assiette_sale",
-            () -> new Item(new Item.Properties()));
+            WashableItem::new);
     public static final RegistryObject<Item> ASSIETTE_WASABI = ITEMS.register("assiette_wasabi",
-            () -> new Item(new Item.Properties()));
+            WashableItem::new);
     public static final RegistryObject<Item> BOL = ITEMS.register("bol",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BOL_SALE = ITEMS.register("bol_sale",
-            () -> new Item(new Item.Properties()));
+            WashableItem::new);
     public static final RegistryObject<Item> COUTEAU_DE_CUISINE = ITEMS.register("couteau_de_cuisine",
-            () -> new SwordItem(Tiers.IRON, 4, 2, new Item.Properties()));
+            () -> new UstensilesOffensifItem(Tiers.IRON, 4, 2, new Item.Properties()));
     public static final RegistryObject<Item> HACHOIR_CUISINE = ITEMS.register("hachoir_cuisine",
-            () -> new SwordItem(Tiers.IRON, 4, 2, new Item.Properties()));
-    public static final RegistryObject<Item> MEULE = ITEMS.register("meule",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> MORTIER_A_PILLON = ITEMS.register("mortier_a_pillon",
-            () -> new Item(new Item.Properties()));
+            () -> new UstensilesOffensifItem(Tiers.IRON, 4, 2, new Item.Properties()));
     public static final RegistryObject<Item> RAPE = ITEMS.register("rape",
-            () -> new SwordItem(Tiers.IRON, 4, 2, new Item.Properties()));
+            () -> new UstensilesOffensifItem(Tiers.IRON, 1, 10, new Item.Properties()));
+    public static final RegistryObject<Item> MEULE = ITEMS.register("meule",
+            UstensilesItem::new);
+    public static final RegistryObject<Item> MORTIER_A_PILLON = ITEMS.register("mortier_a_pillon",
+            UstensilesItem::new);
 
     //viandes
     public static final RegistryObject<Item> ANCHOIS_CRU = ITEMS.register("anchois_cru",

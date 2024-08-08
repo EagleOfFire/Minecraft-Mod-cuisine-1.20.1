@@ -28,6 +28,7 @@ import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 import ros.eagleoffire.roscuisine.block.ModBlocks;
 import ros.eagleoffire.roscuisine.block.entity.ModBlockEntities;
+import ros.eagleoffire.roscuisine.events.WashInWater;
 import ros.eagleoffire.roscuisine.item.ModCreativeTabs;
 import ros.eagleoffire.roscuisine.item.ModItems;
 import ros.eagleoffire.roscuisine.screen.FumoirScreen;
@@ -42,16 +43,15 @@ public class ROSCuisine {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeTabs.register(modEventBus);
-
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
 
-        modEventBus.addListener(this::commonSetup);
-
         MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(WashInWater.class);
+
+        modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::addCreative);
     }
 

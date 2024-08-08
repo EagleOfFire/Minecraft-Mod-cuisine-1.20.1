@@ -5,6 +5,7 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
@@ -20,6 +21,7 @@ public class WashableItem extends Item {
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
+        ItemStack transformedItem = new ItemStack(Items.AIR);
 
         // Ray trace to find the block the player is looking at
         BlockHitResult hitResult = getPlayerPOVHitResult(level, player, ClipContext.Fluid.SOURCE_ONLY);
@@ -30,7 +32,16 @@ public class WashableItem extends Item {
             if (blockState.getFluidState().getType() == Fluids.WATER) {
                 // Transform the item in the player's hand
                 if (!level.isClientSide) {
-                    player.setItemInHand(hand, new ItemStack(ModItems.ASSIETTE.get()));
+                    itemstack.shrink(1);
+                    if (itemstack.getItem() == ModItems.BOL_SALE.get()) {
+                        transformedItem = new ItemStack(ModItems.BOL.get());
+                    }else if ((itemstack.getItem() == ModItems.ASSIETTE_SALE.get()) || (itemstack.getItem() == ModItems.ASSIETTE_WASABI.get())) {
+                        transformedItem = new ItemStack(ModItems.ASSIETTE.get());
+                    }
+                    if (!player.addItem(transformedItem)) {
+                        // If the inventory is full, drop the item in the world
+                        player.drop(transformedItem, false);
+                    }
                 }
 
                 return InteractionResultHolder.success(itemstack);
