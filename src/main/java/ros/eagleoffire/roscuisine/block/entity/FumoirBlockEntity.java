@@ -12,9 +12,12 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.entity.FurnaceBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
@@ -23,7 +26,11 @@ import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import org.openjdk.nashorn.internal.runtime.regexp.joni.constants.OPCode;
+import ros.eagleoffire.roscuisine.recipe.FumoirRecipes;
 import ros.eagleoffire.roscuisine.screen.FumoirMenu;
+
+import java.util.Optional;
 
 public class FumoirBlockEntity extends BlockEntity implements MenuProvider {
     private final ItemStackHandler itemHandler = new ItemStackHandler(11);
@@ -148,12 +155,50 @@ public class FumoirBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     private void craftItem() {
+        Optional<FumoirRecipes> recipe = getCurrentRecipe();
+        ItemStack result = recipe.get().getResultItem(null);
+        this.itemHandler.extractItem(INPUT_SLOT_1, 1, false);
+        this.itemHandler.extractItem(INPUT_SLOT_2, 1, false);
+        this.itemHandler.extractItem(INPUT_SLOT_3, 1, false);
+        this.itemHandler.extractItem(INPUT_SLOT_4, 1, false);
+        this.itemHandler.extractItem(INPUT_SLOT_5, 1, false);
+        this.itemHandler.extractItem(INPUT_SLOT_6, 1, false);
+        this.itemHandler.extractItem(INPUT_SLOT_7, 1, false);
+        this.itemHandler.extractItem(INPUT_SLOT_8, 1, false);
+        this.itemHandler.extractItem(INPUT_SLOT_9, 1, false);
 
+        this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
+                this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + result.getCount()));
     }
 
     private boolean hasRecipe() {
-        return false;
-    } //was on true
+        Optional<FumoirRecipes> recipe = getCurrentRecipe();
+
+        if (recipe.isEmpty()){
+            return false;
+        }
+
+        ItemStack result = recipe.get().getResultItem(null);
+
+        return canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
+    }
+
+    private boolean canInsertItemIntoOutputSlot(Item item) {
+        return this.itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() || this.itemHandler.getStackInSlot(OUTPUT_SLOT).is(item);
+    }
+
+    private boolean canInsertAmountIntoOutputSlot(int count) {
+        return this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + count <= this.itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
+    }
+
+    private Optional<FumoirRecipes> getCurrentRecipe() {
+        SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
+        for(int i = 0; i< itemHandler.getSlots(); i++){
+            inventory.setItem(i, this.itemHandler.getStackInSlot(i));
+        }
+
+        return this.level.getRecipeManager().getRecipeFor(FumoirRecipes.Type.INSTANCE, inventory, level);
+    }
 
     private boolean hasProgressFinished() {
         return progress >= maxProgress;

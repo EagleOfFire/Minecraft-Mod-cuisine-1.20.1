@@ -41,9 +41,9 @@ public class FumoirScreen extends AbstractContainerScreen<FumoirMenu> {
 
     private void renderProgressArrow(GuiGraphics guiGraphics, int x, int y){
         if(menu.isCrafting()){
-            //guiGraphics.blit(TEXTURE, x+85,y+30,176,0,8,menu.getScaledProgress());
+            guiGraphics.blit(TEXTURE, x+85,y+30,176,0,8,menu.getScaledProgress());
         }
-        guiGraphics.blit(TEXTURE, x+85,y+30,176,0,8,26);
+        //guiGraphics.blit(TEXTURE, x+85,y+30,176,0,8,26);
     }
 
     @Override

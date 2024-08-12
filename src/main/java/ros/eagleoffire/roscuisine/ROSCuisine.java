@@ -31,6 +31,7 @@ import ros.eagleoffire.roscuisine.block.entity.ModBlockEntities;
 import ros.eagleoffire.roscuisine.events.WashInWater;
 import ros.eagleoffire.roscuisine.item.ModCreativeTabs;
 import ros.eagleoffire.roscuisine.item.ModItems;
+import ros.eagleoffire.roscuisine.recipe.ModRecipes;
 import ros.eagleoffire.roscuisine.screen.FumoirScreen;
 import ros.eagleoffire.roscuisine.screen.ModMenuTypes;
 
@@ -47,6 +48,7 @@ public class ROSCuisine {
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(WashInWater.class);
