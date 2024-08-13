@@ -105,75 +105,75 @@ public class ModItems {
 
     // contenant bouteille
     public static final RegistryObject<Item> BOUTEILLE_EAU = ITEMS.register("bouteille_eau",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> BOUTEILLE_EAU_GLACER = ITEMS.register("bouteille_eau_glacer",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> BOUTEILLE_VIDE = ITEMS.register("bouteille_vide",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BOUTEILLE_VIN_ROUGE_YAMANASHI = ITEMS.register("bouteille_vin_rouge_yamanashi",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> CONCENTRE_TOMATE = ITEMS.register("concentre_tomate",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> EAU_SALEE = ITEMS.register("eau_salee",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> HUILE_DE_SESAME = ITEMS.register("huile_de_sesame",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> HUILE_OLIVE = ITEMS.register("huile_olive",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> HUILE_VEGETALE = ITEMS.register("huile_vegetale",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> LAIT_EN_BOUTEILLE = ITEMS.register("lait_en_bouteille",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> MIRIN_EN_BOUTEILLE = ITEMS.register("mirin_en_bouteille",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> SAKE_DE_CUISINE = ITEMS.register("sake_de_cuisine",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> SAUCE_DASHI = ITEMS.register("sauce_dashi",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> SAUCE_GOMA = ITEMS.register("sauce_goma",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> SAUCE_KETCHUP = ITEMS.register("sauce_ketchup",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> SAUCE_MIRIN = ITEMS.register("sauce_mirin",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> SAUCE_PONZU = ITEMS.register("sauce_ponzu",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> SAUCE_SOBA = ITEMS.register("sauce_soba",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> SAUCE_SOJA = ITEMS.register("sauce_soja",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> SAUCE_SOJA_SUCREE = ITEMS.register("sauce_soja_sucree",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> SAUCE_TAKOYAKI = ITEMS.register("sauce_takoyaki",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> SAUCE_TEPPANYAKI = ITEMS.register("sauce_teppanyaki",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> SAUCE_TERIYAKI = ITEMS.register("sauce_teriyaki",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> SAUCE_TONKATSU = ITEMS.register("sauce_tonkatsu",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> SAUCE_TSUYU = ITEMS.register("sauce_tsuyu",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> SAUCE_UNAGI = ITEMS.register("sauce_unagi",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> SAUCE_WASABI = ITEMS.register("sauce_wasabi",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> SAUCE_WORCESTERSHIRE = ITEMS.register("sauce_worcestershire",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> SAUCE_YAKINIKU = ITEMS.register("sauce_yakiniku",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> SAUCE_YAKISOBA = ITEMS.register("sauce_yakisoba",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> SAUCE_YAKITORI = ITEMS.register("sauce_yakitori",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> SAUCE_YAKIZAKANA = ITEMS.register("sauce_yakizakana",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> VINAIGRE_BLANC = ITEMS.register("vinaigre_blanc",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
     public static final RegistryObject<Item> VINAIGRE_DE_RIZ = ITEMS.register("vinaigre_de_riz",
-            () -> new Item(new Item.Properties()));
+            ModBottleItem::new);
 
-    // contenant bouteille
+    // contenant conserve
     public static final RegistryObject<Item> CONSERVE_DE_CAVIAR = ITEMS.register("conserve_de_caviar",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CONSERVE_OEUF_SAUMON = ITEMS.register("conserve_oeuf_saumon",
@@ -183,23 +183,23 @@ public class ModItems {
 
     // contenant pot
     public static final RegistryObject<Item> BOCALE_ANCHOIS = ITEMS.register("bocale_anchois",
-            () -> new Item(new Item.Properties()));
+            ModJarItem::new);
     public static final RegistryObject<Item> BOUILLON_DE_BOEUF = ITEMS.register("bouillon_de_boeuf",
-            () -> new Item(new Item.Properties()));
+            ModJarItem::new);
     public static final RegistryObject<Item> BOUILLON_DE_DASHI = ITEMS.register("bouillon_de_dashi",
-            () -> new Item(new Item.Properties()));
+            ModJarItem::new);
     public static final RegistryObject<Item> BOUILLON_DE_PORC = ITEMS.register("bouillon_de_porc",
-            () -> new Item(new Item.Properties()));
+            ModJarItem::new);
     public static final RegistryObject<Item> BOUILLON_DE_POULET = ITEMS.register("bouillon_de_poulet",
-            () -> new Item(new Item.Properties()));
+            ModJarItem::new);
     public static final RegistryObject<Item> MAYONNAISE = ITEMS.register("mayonnaise",
-            () -> new Item(new Item.Properties()));
+            ModJarItem::new);
     public static final RegistryObject<Item> MOUTARDE = ITEMS.register("moutarde",
-            () -> new Item(new Item.Properties()));
+            ModJarItem::new);
     public static final RegistryObject<Item> PATE_MISO = ITEMS.register("pate_miso",
-            () -> new Item(new Item.Properties()));
+            ModJarItem::new);
     public static final RegistryObject<Item> PATE_MISO_TRADITIONNEL = ITEMS.register("pate_miso_traditionnel",
-            () -> new Item(new Item.Properties()));
+            ModJarItem::new);
     public static final RegistryObject<Item> POT_VIDE = ITEMS.register("pot_vide",
             () -> new Item(new Item.Properties()));
 
