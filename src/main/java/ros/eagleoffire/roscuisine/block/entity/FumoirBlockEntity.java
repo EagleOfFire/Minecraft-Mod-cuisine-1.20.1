@@ -19,6 +19,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.entity.FurnaceBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
@@ -27,6 +28,7 @@ import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.openjdk.nashorn.internal.runtime.regexp.joni.constants.OPCode;
+import ros.eagleoffire.roscuisine.block.custom.FumoirBlock;
 import ros.eagleoffire.roscuisine.recipe.FumoirRecipes;
 import ros.eagleoffire.roscuisine.screen.FumoirMenu;
 
@@ -52,30 +54,36 @@ public class FumoirBlockEntity extends BlockEntity implements MenuProvider {
     protected final ContainerData data;
     private int progress = 0;
     private int maxProgress = 78;
+    private int burnTime = 0;
+    private int currentBurnTime = 0;
 
     public FumoirBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(ModBlockEntities.FUMOIR_BE.get(), pPos, pBlockState);
         this.data = new ContainerData() {
             @Override
             public int get(int pIndex) {
-                return switch (pIndex){
+                return switch (pIndex) {
                     case 0 -> FumoirBlockEntity.this.progress;
                     case 1 -> FumoirBlockEntity.this.maxProgress;
+                    case 2 -> FumoirBlockEntity.this.burnTime;
+                    case 3 -> FumoirBlockEntity.this.currentBurnTime;
                     default -> 0;
                 };
             }
 
             @Override
             public void set(int pIndex, int pValue) {
-                switch (pIndex){
+                switch (pIndex) {
                     case 0 -> FumoirBlockEntity.this.progress = pValue;
                     case 1 -> FumoirBlockEntity.this.maxProgress = pValue;
+                    case 2 -> FumoirBlockEntity.this.burnTime = pValue;
+                    case 3 -> FumoirBlockEntity.this.currentBurnTime = pValue;
                 }
             }
 
             @Override
             public int getCount() {
-                return 2;
+                return 4;
             }
         };
 
@@ -123,10 +131,11 @@ public class FumoirBlockEntity extends BlockEntity implements MenuProvider {
 
     @Override
     protected void saveAdditional(CompoundTag pTag) {
+        super.saveAdditional(pTag);
         pTag.put("inventory", itemHandler.serializeNBT());
         pTag.putInt("fumoir.progress", progress);
-
-        super.saveAdditional(pTag);
+        pTag.putInt("fumoir.burnTime", burnTime);
+        pTag.putInt("fumoir.currentBurnTime", currentBurnTime);
     }
 
     @Override
@@ -134,21 +143,57 @@ public class FumoirBlockEntity extends BlockEntity implements MenuProvider {
         super.load(pTag);
         itemHandler.deserializeNBT(pTag.getCompound("inventory"));
         progress = pTag.getInt("fumoir.progress");
+        burnTime = pTag.getInt("fumoir.burnTime");
+        currentBurnTime = pTag.getInt("fumoir.currentBurnTime");
     }
 
-    public void tick(Level pLevel, BlockPos pPos, BlockState pState){
-        if (hasRecipe()){
-            increaseCraftingProgress();
-            setChanged(pLevel, pPos, pState);
 
-            if(hasProgressFinished()){
-                craftItem();
-                resetProgress();
+    public void tick(Level pLevel, BlockPos pPos, BlockState pState) {
+        boolean isBurning = isBurning();
+
+        if (isBurning) {
+            burnTime--;
+        }
+
+        if (hasRecipe()) {
+            if (!isBurning && canBurn()) {
+                startBurning();
             }
-        }else {
+
+            if (isBurning) {
+                increaseCraftingProgress();
+                setChanged(pLevel, pPos, pState);
+
+                if (hasProgressFinished()) {
+                    craftItem();
+                    resetProgress();
+                }
+            }
+        } else {
             resetProgress();
         }
+
+        if (isBurning != isBurning()) {
+            pLevel.setBlock(pPos, pState, 3);
+            setChanged(pLevel, pPos, pState);
+        }
     }
+
+    private boolean isBurning() {
+        return burnTime > 0;
+    }
+
+    private boolean canBurn() {
+        ItemStack fuelStack = this.itemHandler.getStackInSlot(FUEL_SLOT);
+        return !fuelStack.isEmpty() && FurnaceBlockEntity.isFuel(fuelStack);
+    }
+
+    private void startBurning() {
+        ItemStack fuelStack = this.itemHandler.extractItem(FUEL_SLOT, 1, false);
+        this.currentBurnTime = ForgeHooks.getBurnTime(fuelStack, null);
+        this.burnTime = currentBurnTime;
+    }
+
 
     private void resetProgress() {
         progress = 0;

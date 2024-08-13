@@ -44,12 +44,26 @@ public class FumoirMenu extends AbstractContainerMenu {
             this.addSlot(new SlotItemHandler(iItemHandler, 8, 62, 48));
 
             this.addSlot(new SlotItemHandler(iItemHandler, 9, 134, 30));
-            this.addSlot(new SlotItemHandler(iItemHandler, 10, 98,56));
-
+            this.addSlot(new SlotItemHandler(iItemHandler, 10, 98, 56)); // Fuel slot
         });
 
         addDataSlots(data);
     }
+
+    public int getBurnTime() {
+        return data.get(2);
+    }
+
+    public int getTotalBurnTime() {
+        return data.get(3);
+    }
+
+    public int getBurnProgress() {
+        int burnTime = getBurnTime();
+        int totalBurnTime = getTotalBurnTime();
+        return totalBurnTime != 0 && burnTime != 0 ? burnTime * 13 / totalBurnTime : 0;
+    }
+
 
     public boolean isCrafting(){
         return data.get(0) > 0;
@@ -79,7 +93,7 @@ public class FumoirMenu extends AbstractContainerMenu {
     private static final int TE_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
 
     // THIS YOU HAVE TO DEFINE!
-    private static final int TE_INVENTORY_SLOT_COUNT = 2;  // must be the number of slots you have!
+    private static final int TE_INVENTORY_SLOT_COUNT = 11;  // Updated to 11 for all slots
     @Override
     public ItemStack quickMoveStack(Player playerIn, int pIndex) {
         Slot sourceSlot = slots.get(pIndex);
@@ -103,6 +117,7 @@ public class FumoirMenu extends AbstractContainerMenu {
             System.out.println("Invalid slotIndex:" + pIndex);
             return ItemStack.EMPTY;
         }
+
         // If stack size == 0 (the entire stack was moved) set slot contents to null
         if (sourceStack.getCount() == 0) {
             sourceSlot.set(ItemStack.EMPTY);
@@ -112,6 +127,7 @@ public class FumoirMenu extends AbstractContainerMenu {
         sourceSlot.onTake(playerIn, sourceStack);
         return copyOfSourceStack;
     }
+
 
     @Override
     public boolean stillValid(Player player) {
