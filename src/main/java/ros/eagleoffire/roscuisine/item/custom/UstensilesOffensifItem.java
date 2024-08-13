@@ -1,4 +1,4 @@
-package ros.eagleoffire.roscuisine.item;
+package ros.eagleoffire.roscuisine.item.custom;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;

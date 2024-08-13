@@ -1,4 +1,4 @@
-package ros.eagleoffire.roscuisine.item;
+package ros.eagleoffire.roscuisine.item.custom;
 
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
+import ros.eagleoffire.roscuisine.item.ModItems;
 
 public class WashableItem extends Item {
     public WashableItem() {
