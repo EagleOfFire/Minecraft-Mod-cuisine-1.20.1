@@ -100,7 +100,7 @@ public class ModCreativeTabs {
 //                        pOutput.accept(ModItems.SAUCE_YAKITORI.get());
 //                        pOutput.accept(ModItems.SAUCE_YAKIZAKANA.get());
 //                        pOutput.accept(ModItems.VINAIGRE_BLANC.get());
-//                        pOutput.accept(ModItems.VINAIGRE_DE_RIZ.get());
+                        pOutput.accept(ModItems.VINAIGRE_DE_RIZ.get());
 
                         // contenant conserve
 //                        pOutput.accept(ModItems.CONSERVE_DE_CAVIAR.get());
@@ -163,9 +163,9 @@ public class ModCreativeTabs {
 //                        pOutput.accept(ModItems.NAVET_BLANC_PLANTE.get());
 //                        pOutput.accept(ModItems.NAVET_PLANTE.get());
 //                        pOutput.accept(ModItems.NAVET_BLANC_RAPEE.get());
-//                        pOutput.accept(ModItems.OIGNON.get());
-//                        pOutput.accept(ModItems.OIGNON_COUPE.get());
-//                        pOutput.accept(ModItems.OIGNON_PLANTE.get());
+                        pOutput.accept(ModItems.OIGNON.get());
+                        pOutput.accept(ModItems.OIGNON_COUPE.get());
+                        pOutput.accept(ModItems.OIGNON_PLANTE.get());
 //                        pOutput.accept(ModItems.OIGNON_ROUGE.get());
 //                        pOutput.accept(ModItems.OIGNON_ROUGE_COUPE.get());
 //                        pOutput.accept(ModItems.OIGNON_ROUGE_PLANTE.get());
@@ -276,7 +276,7 @@ public class ModCreativeTabs {
                         pOutput.accept(ModItems.OEUF_DE_POULE.get());
 //                        pOutput.accept(ModItems.POISSON_COELACANTH.get());
 //                        pOutput.accept(ModItems.POISSON_TRUITE_ARC_EN_CIEL.get());
-//                        pOutput.accept(ModItems.POULET_CUISSE_CRU.get());
+                        pOutput.accept(ModItems.POULET_CUISSE_CRU.get());
                         pOutput.accept(ModItems.POULPE.get());
                         pOutput.accept(ModItems.THON_FUMEE.get());
                         pOutput.accept(ModItems.ANGUILLE_GRILLEE.get());
@@ -299,7 +299,7 @@ public class ModCreativeTabs {
                         pOutput.accept(ModItems.POISSON_ANGUILLE.get());
                         pOutput.accept(ModItems.THON_BOUILLI.get());
                         pOutput.accept(ModItems.THON_GRILLEE.get());
-//                        pOutput.accept(ModItems.POULET_ENTIER.get());
+                        pOutput.accept(ModItems.POULET_ENTIER.get());
 //                        pOutput.accept(ModItems.PORC_CRU.get());
 //                        pOutput.accept(ModItems.PORC_COUPEE.get());
                         pOutput.accept(ModItems.SAUMON_CRU.get());
