@@ -528,8 +528,6 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ASSIETTE_SALE = ITEMS.register("assiette_sale",
             WashableItem::new);
-    public static final RegistryObject<Item> ASSIETTE_WASABI = ITEMS.register("assiette_wasabi",
-            WashableItem::new);
     public static final RegistryObject<Item> BOL = ITEMS.register("bol",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BOL_SALE = ITEMS.register("bol_sale",

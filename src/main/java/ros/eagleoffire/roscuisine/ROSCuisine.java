@@ -28,7 +28,6 @@ import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 import ros.eagleoffire.roscuisine.block.ModBlocks;
 import ros.eagleoffire.roscuisine.block.entity.ModBlockEntities;
-import ros.eagleoffire.roscuisine.events.WashInWater;
 import ros.eagleoffire.roscuisine.item.ModCreativeTabs;
 import ros.eagleoffire.roscuisine.item.ModItems;
 import ros.eagleoffire.roscuisine.recipe.ModRecipes;
@@ -51,7 +50,6 @@ public class ROSCuisine {
         ModRecipes.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
-        MinecraftForge.EVENT_BUS.register(WashInWater.class);
 
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::addCreative);

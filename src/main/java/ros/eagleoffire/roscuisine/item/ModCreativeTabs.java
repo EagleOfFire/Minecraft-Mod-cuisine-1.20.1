@@ -51,10 +51,10 @@ public class ModCreativeTabs {
 //                        pOutput.accept(ModItems.CHAPELURE.get());
 //                        pOutput.accept(ModItems.CURRY_JAUNE.get());
 //                        pOutput.accept(ModItems.CURRY_ROUGE.get());
-//                        pOutput.accept(ModItems.FARINE.get());
+                        pOutput.accept(ModItems.FARINE.get());
                         pOutput.accept(ModItems.FARINE_DE_RIZ.get());
-//                        pOutput.accept(ModItems.FARINE_DE_RIZ_GLUANT.get());
-//                        pOutput.accept(ModItems.FARINE_DE_TEMPURA.get());
+                        pOutput.accept(ModItems.FARINE_DE_RIZ_GLUANT.get());
+                        pOutput.accept(ModItems.FARINE_DE_TEMPURA.get());
 //                        pOutput.accept(ModItems.FECULE_DE_MAIS.get());
                         pOutput.accept(ModItems.FECULE_DE_POMME_DE_TERRE.get());
 //                        pOutput.accept(ModItems.FECULE_DE_RIZ.get());
@@ -331,7 +331,6 @@ public class ModCreativeTabs {
                         //outils
                         pOutput.accept(ModItems.ASSIETTE.get());
                         pOutput.accept(ModItems.ASSIETTE_SALE.get());
-                        pOutput.accept(ModItems.ASSIETTE_WASABI.get());
                         pOutput.accept(ModItems.BOL.get());
                         pOutput.accept(ModItems.BOL_SALE.get());
                         pOutput.accept(ModItems.COUTEAU_DE_CUISINE.get());

@@ -36,7 +36,7 @@ public class WashableItem extends Item {
                     itemstack.shrink(1);
                     if (itemstack.getItem() == ModItems.BOL_SALE.get()) {
                         transformedItem = new ItemStack(ModItems.BOL.get());
-                    }else if ((itemstack.getItem() == ModItems.ASSIETTE_SALE.get()) || (itemstack.getItem() == ModItems.ASSIETTE_WASABI.get())) {
+                    }else if ((itemstack.getItem() == ModItems.ASSIETTE_SALE.get()) ) {
                         transformedItem = new ItemStack(ModItems.ASSIETTE.get());
                     }
                     if (!player.addItem(transformedItem)) {
